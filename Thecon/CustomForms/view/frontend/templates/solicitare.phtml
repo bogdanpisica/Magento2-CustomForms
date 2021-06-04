@@ -1,0 +1,27 @@
+<?php
+$blockObj= $block->getLayout()->createBlock('Thecon\CustomForms\Block\Solicitare');
+?>
+
+<h1>Formular Solicitare</h1>
+
+<form action="<?php echo $blockObj->getFormAction(); ?>" method="POST" id="form-solicitare">
+    <label for="nume_firma"><?php echo __('Company name'); ?></label>
+    <input name="nume_firma" type="text" required placeholder="<?php echo __('Company name'); ?>">
+
+    <label for="localitate_sediu"><?php echo __('HQ Location'); ?></label>
+    <input name="localitate_sediu" type="text" required placeholder="<?php echo __('HQ Location'); ?>">
+
+    <label for="nume_reprezentant"><?php echo __('Agent name'); ?></label>
+    <input name="nume_reprezentant" type="text" required placeholder="<?php echo __('Agent name'); ?>">
+
+    <label for="specific_vanzare"><?php echo __('Company Specifics'); ?></label>
+    <input name="specific_vanzare" type="text" required placeholder="<?php echo __('Company Specifics'); ?>">
+
+    <label for="telefon"><?php echo __('Phone number'); ?></label>
+    <input name="telefon" type="number" required placeholder="<?php echo __('Phone number'); ?>">
+
+    <label for="email"><?php echo __('Email Address'); ?></label>
+    <input name="email" type="email" required placeholder="<?php echo __('Email Address'); ?>">
+
+    <button type="submit" class="action" id="submit_filter"><span><?= $block->escapeHtml(__('Send')) ?></span></button>
+</form>

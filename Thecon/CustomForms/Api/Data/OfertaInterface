@@ -1,0 +1,26 @@
+<?php
+namespace Thecon\CustomForms\Api\Data;
+
+interface OfertaInterface
+{
+    const ENTITY_ID = 'entity_id';
+    const NUME_PRENUME = 'nume_prenume';
+    const TELEFON = 'telefon';
+    const EMAIL = 'email';
+    const MESAJ = 'mesaj';
+
+    public function getEntityId();
+    public function setEntityId($entityId);
+
+    public function getNumePrenume();
+    public function setNumePrenume($nume_prenume);
+
+    public function getTelefon();
+    public function setTelefon($telefon);
+
+    public function getEmail();
+    public function setEmail($email);
+
+    public function getMesaj();
+    public function setMesaj($mesaj);
+}

@@ -1,0 +1,22 @@
+<!--@subject {{var subject}} @-->
+{{template config_path="design/email/header_template"}}
+ 
+<p>{{trans "A new reseller offer has been created:"}}</p>
+<table class="message-details">
+    <tr>
+        <td><b>{{trans "Name :"}}</b></td>
+        <td>{{var nume_prenume}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Email :"}}</b></td>
+        <td>{{var email}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Phone :"}}</b></td>
+        <td>{{var telefon}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans "Message :"}}</b></td>
+        <td>{{var mesaj}}</td>
+    </tr>    
+</table>

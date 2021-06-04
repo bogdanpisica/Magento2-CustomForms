@@ -1,0 +1,20 @@
+<?php $test = $block->getDataInfo();?>
+
+<div class="grid-modal">
+<h1> <?= $test->getData('nume_prenume') ?> (<?=__('ID: ') ?><?= $test->getData('entity_id') ?>) </h1>
+<h4><?=__('More details about Reseller Offer Form: ') ?></h4>
+<p><b><?=__('ID: ') ?></b><?= $test->getData('entity_id') ?></p>
+<p><b><?=__('Name: ') ?></b><?= $test->getData('nume_prenume') ?></p>
+<p><b><?=__('Phone number: ') ?></b><?= $test->getData('telefon') ?></p>
+<p><b><?=__('Email: ') ?></b><?= $test->getData('email') ?></p>
+<div class="message-field">
+<p><b><?=__('Message: ') ?></b><?= $test->getData('mesaj') ?></p>
+</div>
+</div>
+
+
+<style>
+.message-field {
+	word-break: break-all;
+}
+</style>

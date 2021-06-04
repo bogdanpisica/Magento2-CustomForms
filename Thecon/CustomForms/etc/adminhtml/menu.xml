@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Thecon_CustomForms::forms" title="Thecon Forms" module="Thecon_CustomForms" sortOrder="10" resource="Thecon_CustomForms::forms"/>
+
+        <add id="Thecon_CustomForms::collaboration" title="Manage collaboration requests" module="Thecon_CustomForms" sortOrder="10" action="collaboration/collaboration" resource="Thecon_CustomForms::collaboration" parent="Thecon_CustomForms::forms"/>
+
+        <add id="Thecon_CustomForms::offer" title="Manage reseller offers" module="Thecon_CustomForms" sortOrder="10" action="offer/offer" resource="Thecon_CustomForms::offer" parent="Thecon_CustomForms::forms"/>
+
+        <add id="Thecon_CustomForms::configuration" title="Email configuration" module="Thecon_CustomForms" sortOrder="10" action="adminhtml/system_config/edit/section/customforms" resource="Thecon_CustomForms::Configuration" parent="Thecon_CustomForms::forms"/>
+
+    </menu>
+</config>

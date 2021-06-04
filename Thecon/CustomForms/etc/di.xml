@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Thecon\CustomForms\Api\Data\SolicitareInterface" type="Thecon\CustomForms\Model\Solicitare" />
+    <preference for="Thecon\CustomForms\Api\Data\OfertaInterface" type="Thecon\CustomForms\Model\Oferta" />
+
+
+    <virtualType name="Thecon\CustomForms\Model\ResourceModel\Solicitare\Solicitare\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">th_form_solicitare</argument>
+            <argument name="resourceModel" xsi:type="string">Thecon\CustomForms\Model\ResourceModel\Solicitare</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="collaboration_record_grid_list_data_source" xsi:type="string">Thecon\CustomForms\Model\ResourceModel\Solicitare\Solicitare\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+
+
+    <virtualType name="Thecon\CustomForms\Model\ResourceModel\Oferta\Oferta\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">th_form_oferta</argument>
+            <argument name="resourceModel" xsi:type="string">Thecon\CustomForms\Model\ResourceModel\Oferta</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="offer_record_grid_list_data_source" xsi:type="string">Thecon\CustomForms\Model\ResourceModel\Oferta\Oferta\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

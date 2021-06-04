@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customforms>
+            <collaboration>
+                <email_subject>New Collaboration Request - Triton</email_subject>
+                <send_email_to_name>Triton Support</send_email_to_name>
+                <send_email_to>support@triton.ro</send_email_to>
+                <email_template_admin>customforms_collaboration_email_template_admin</email_template_admin>
+            </collaboration>
+            <oferta>
+                <email_subject_offer>New Reseller Offer - Triton</email_subject_offer>
+                <send_email_to_name_offer>Triton Support</send_email_to_name_offer>
+                <send_email_to_offer>support@triton.ro</send_email_to_offer>
+                <email_template>customforms_oferta_email_template</email_template>
+            </oferta>
+        </customforms>
+    </default>
+</config>

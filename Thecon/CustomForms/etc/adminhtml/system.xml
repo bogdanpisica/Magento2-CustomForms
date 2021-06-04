@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="thecon" translate="label" sortOrder="2000">
+            <label>Thecon</label>
+        </tab>
+        <section id="customforms" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Thecon Forms</label>
+            <tab>thecon</tab>
+            <resource>Thecon_CustomForms::forms</resource>
+            <group id="collaboration" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Collaboration Email Configuration</label>
+                <field id="email_subject" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Subject</label>
+                    <comment>Set Email subject for collaboration requests.</comment>
+                </field>
+                <field id="send_email_to_name" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Admin Name</label>
+                    <comment>The email name to which the collaboration request email will be sent.</comment>
+                </field>
+                <field id="send_email_to" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Admin Email</label>
+                    <comment>The email address to which the collaboration request email will be sent.</comment>
+                </field>
+                <field id="email_template_admin" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+            <group id="oferta" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Reseller Offer Email Configuration</label>
+                <field id="email_subject_offer" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Subject</label>
+                    <comment>Set Email subject for reseller offer.</comment>
+                </field>
+                <field id="send_email_to_name_offer" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Admin Name</label>
+                    <comment>The email name to which the reseller offer email will be sent.</comment>
+                </field>
+                <field id="send_email_to_offer" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Admin Email</label>
+                    <comment>The email address to which the reseller offer email will be sent.</comment>
+                </field>
+                <field id="email_template" translate="label comment" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

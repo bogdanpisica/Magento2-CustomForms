@@ -1,0 +1,13 @@
+<?php $test = $block->getDataInfo();?>
+
+<div class="grid-modal">
+<h1> <?= $test->getData('nume_firma') ?> (<?=__('ID: ') ?><?= $test->getData('entity_id') ?>) </h1>
+<h4><?=__('More details about Request form: ') ?></h4>
+<p><b><?=__('ID: ') ?></b><?= $test->getData('entity_id') ?></p>
+<p><b><?=__('Company Name: ') ?></b><?= $test->getData('nume_firma') ?></p>
+<p><b><?=__('HQ Location: ') ?></b><?= $test->getData('localitate_sediu') ?></p>
+<p><b><?=__('Agent Name: ') ?></b><?= $test->getData('nume_reprezentant') ?></p>
+<p><b><?=__('Company Specifics: ') ?></b><?= $test->getData('specific_vanzare') ?></p>
+<p><b><?=__('Phone number: ') ?></b><?= $test->getData('telefon') ?></p>
+<p><b><?=__('Email: ') ?></b><?= $test->getData('email') ?></p>
+</div>

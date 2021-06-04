@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="customforms_collaboration_email_template_admin" label="Thecon Collaboration Template" file="thforms_admin.html" type="html" module="Thecon_CustomForms" area="frontend"/>
+
+    <template id="customforms_oferta_email_template" label="Thecon Reseller Offer Template" file="thforms_offer.html" type="html" module="Thecon_CustomForms" area="frontend"/>
+    
+</config>

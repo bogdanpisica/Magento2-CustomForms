@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="collaboration" frontName="collaboration">
+            <module name="Thecon_CustomForms"/>
+        </route>
+        <route id="offer" frontName="offer">
+            <module name="Thecon_CustomForms"/>
+        </route>
+    </router>
+</config>
